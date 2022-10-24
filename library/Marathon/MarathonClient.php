@@ -120,11 +120,11 @@ class MarathonClient
           $app->env->$key = $value;
       }
 
-      if (isset($app->http{0})) {
-        $app->http_primary =  $app->http{0};
+      if (isset($app->http[0])) {
+        $app->http_primary =  $app->http[0};
       }
-      if (isset($app->https{0})) {
-        $app->https_primary = $app->https{0};
+      if (isset($app->https[0])) {
+        $app->https_primary = $app->https[0];
       }
 
       $objects[] = $object = $app;
